@@ -20,19 +20,9 @@ var speed = 50;
 var time;
 
 function typeWriter() {
-    document.getElementById("nxt").style.display = "none";
   if (i < txt.length) {
     document.getElementById("para").innerHTML += txt.charAt(i);
     i++;
     setTimeout(typeWriter, speed);
   }
-  launch();
-}
-
-function launch(){
-    time = setTimeout(open, 35000);
-}
-
-function open(){
-    document.getElementById("nxt").style.display = "block";
 }
